@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  charset="UTF-8" />
+    <title>TD HTML5 - forms 2.0</title>
+    <link rel="stylesheet" href="css/p1.css" media="screen"/>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="topHeader">
+                <div class="container">
+                    <div class="leftCol">
+                        <div id="headBox"></div>
+                    </div><!--/leftCol -->
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a class="currentPageLink" href="forms.html">f2.0</a></li>
+                            <li><a href="geo.html">geo</a></li>
+                            <li  class="childNavHolder">
+                                <a href="video1.html">video</a>
+                                <ul class="childNav">
+                                    <li><a href="video2.html">video2</a></li>
+                                </ul>
+                            </li>
+                            <li class="childNavHolder">
+                                <a href="canvas1.html">canvas</a>
+                                <ul class="childNav">
+                                    <li><a href="canvas1.html">canvas2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="um.html">um</a></li>
+                            <li><a href="svg.html">svg</a></li>
+                            <li><a href="css3.html">css3</a></li>
+                        </ul>
+                        <div class="clearFix"></div>
+                    </nav><!--/nav-->
+                    <div class="clearFix"></div>
+                </div><!--/container-->
+            </div><!--/topHeader-->
+
+
+        </header><!--/header-->
+
+        <main>
+            <h1 class="mainTitle">Forms 2.0</h1>
+
+            <form action="#" class="box boxP">
+                <p>
+                    <input type="number" id="numA" value="" class="rAlign"> +
+                    <input type="number" id="numB" value="" class="rAlign"> =
+                    <button type="button" id="resBtn">sum</button>
+                    <output id="result" class="rAlign"></output>
+                </p>
+
+                <p>
+                    <meter min="0" max="100" low="20" optimum="80"
+                           high="90" value="95"></meter>
+                </p>
+
+                <p>
+                    <progress id="prBar" min="0" max="1000" value="100"></progress>
+                </p>
+            </form>
+        </main><!--/main-->
+
+        <footer>
+            <div class="container">
+                <div id="footerBox">&copy; Training Dragon 2016</div>
+                <p id="footerNav">
+                    <a href="index.html">home</a>|
+                    <a href="forms.html">forms 2.0</a> |
+                    <a href="geo.html">geo</a> |
+                    <a href="video1.html">video</a> |
+                    <a href="canvas1.html">canvas</a> |
+                    <a href="um.html">user media</a> |
+                    <a href="svg.html">svg</a> |
+                    <a href="css3.html">css3</a>
+                </p>
+                <div class="clearFix"></div>
+            </div>
+        </footer><!--/footer-->
+    </div><!--/wrapper-->
+
+
+
+
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/forms.js"></script>
+
+</body>
+</html>

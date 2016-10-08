@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  charset="UTF-8" />
+    <title>TD HTML5 - semantic markup</title>
+    <link rel="stylesheet" href="css/p1.css" media="screen"/>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="topHeader">
+                <div class="container">
+                    <div class="leftCol">
+                        <div id="headBox"></div>
+                    </div><!--/leftCol -->
+
+                    <nav>
+                        <ul>
+                            <li><a class="currentPageLink" href="#">home</a></li>
+                            <li><a href="forms.html">f2.0</a></li>
+                            <li><a href="geo.html">geo</a></li>
+                            <li  class="childNavHolder">
+                                <a href="video1.html">video</a>
+                                <ul class="childNav">
+                                    <li><a href="video2.html">video2</a></li>
+                                </ul>
+                            </li>
+                            <li class="childNavHolder">
+                                <a href="canvas1.html">canvas</a>
+                                <ul class="childNav">
+                                    <li><a href="canvas1.html">canvas2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="um.html">um</a></li>
+                            <li><a href="svg.html">svg</a></li>
+                            <li><a href="css3.html">css3</a></li>
+                        </ul>
+                        <div class="clearFix"></div>
+                    </nav><!--/nav-->
+                    <div class="clearFix"></div>
+                </div><!--/container-->
+            </div><!--/topHeader-->
+
+            <div id="banner">
+                <div class="container">
+                    <div class="leftCol">
+                        <div id="logo">
+                            <a href="index.html">
+                                <img src="imgs/logo.png" width="186" height="95" alt="breadroom logo">
+                            </a>
+                        </div><!--/logo-->
+                    </div><!--/leftCol-->
+
+                    <div class="rightCol">
+                        <div id="titleHolder">
+                            <h1>the best bakery in town</h1>
+                        </div><!--titleHolder-->
+                        <p id="subTitle">
+                            Lorem ipsum dolor sit amet, consectetur adi
+                            incididunt ut abore et dolore magna
+                        </p>
+
+                    </div><!--/rightCol-->
+
+                    <div class="clearFix"></div>
+                </div><!--/banner container-->
+
+                <div class="container">
+                    <div class="rightCol">
+                        <div id="control">
+                            <div id="function">
+                                <p>extra function</p>
+                            </div><!--/function-->
+
+                            <div id="bullets">
+                                <div class="bullet" onclick="showPic1();"></div>
+                                <div class="bullet" onclick="showPic2();"></div>
+                                <div id="b3" class="bullet" onclick="showPic3();"></div>
+                                <div class="clearFix"></div>
+                            </div><!--/bullets-->
+                        </div><!--control-->
+                    </div><!--/rightCol-->
+                    <div class="clearFix"></div>
+                </div><!--/banner container-->
+            </div><!--/banner-->
+
+        </header><!--/header-->
+
+        <main>
+            <section id="baking" class="container">
+                <div class="leftCol">
+                    <img src="imgs/paper-bag.png" width="297" height="499" alt="bread paper bag">
+                    <div class="bar">
+                        <a href="#" class="btn">shop online</a>
+                    </div><!--/bar-->
+                </div><!--/leftCol-->
+
+                <div class="rightCol">
+                    <h2 class="stickyH2">our baking process</h2>
+                    <p class="bigPar">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut abore et dolore magna aliqua. quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <img id="videoPic" src="imgs/video.png" width="612" height="353" alt="youtube video image">
+                </div><!--/rightCol-->
+                <div class="clearFix"></div>
+            </section><!--/baking-->
+
+            <section id="breads">
+                <div class="container">
+
+
+                    <div class="rightCol">
+                        <h2>our breads</h2>
+                    </div><!--/rightCol-->
+                    <div class="clearFix"></div>
+                </div><!--/container bc1-->
+
+                <div class="container">
+                    <div class="leftCol">
+                        <div class="bar barHeader">
+                            <p>find us</p>
+                        </div><!--/bar-->
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.045188730543!2d-0.11869085000003608!3d51.53073100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3f4b30cd5d%3A0xa77d9daa254675c!2sKings+Cross%2C+London+WC1X+9DE!5e0!3m2!1sen!2suk!4v1424556268618"
+                                width="297" height="184" frameborder="0" style="border:0"></iframe>
+
+                        <div class="bar sideLink">
+                            <a href="#">ideas</a>
+                        </div>
+
+                        <div class="bar sideLink">
+                            <a href="#">recipes</a>
+                        </div>
+
+                    </div><!--/leftCol-->
+
+                    <div class="rightCol">
+                        <p class="bigPar" contenteditable>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut abore et dolore magna aliqua. quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.
+                        </p>
+
+                        <article class="smallCol">
+                            <figure>
+                                <img src="imgs/bread1.png" width="190" height="83" alt="bread">
+                                <figcaption><h3>bread 01</h3></figcaption>
+                            </figure>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing
+                            </p>
+                            <a class="moreBtn" href="#">see more</a>
+                        </article><!--/smallCol 1-->
+
+                        <article class="smallCol">
+                            <figure>
+                                <img src="imgs/bread2.png" width="190" height="83" alt="bread">
+                                <figcaption><h3>bread 02</h3></figcaption>
+                            </figure>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing
+                            </p>
+                            <a class="moreBtn" href="#">see more</a>
+                        </article><!--/smallCol 2-->
+
+                        <article class="smallCol lastCol">
+                            <figure>
+                                <img src="imgs/bread3.png" width="190" height="83" alt="bread">
+                                <figcaption><h3>bread 03</h3></figcaption>
+                            </figure>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing
+                            </p>
+                            <a class="moreBtn" href="#">see more</a>
+                        </article><!--/smallCol 3-->
+                        <div class="clearFix"></div>
+
+
+                    </div><!--/rightCol-->
+                    <div class="clearFix"></div>
+                </div><!--/container bc2-->
+
+            </section><!--/breads-->
+
+            <section id="services" class="container">
+                <div class="rightCol">
+                    <div id="servCol" class="sCol">
+                        <h4>services</h4>
+                        <ul>
+                            <li><a href="#">LOREM IPSUM DOLOR</a></li>
+                            <li><a href="#">AMANSE ISTE DOR</a></li>
+                            <li><a href="#">REPETITA BONTE ANT</a></li>
+                            <li><a href="#">PALLENTESQUE ADOR</a></li>
+                            <li><a href="#">ORTENSIC MINUSQUE</a></li>
+                            <li><a href="#">ARTENTIMUR IST MENTO</a></li>
+                            <li><a href="#">REPETITA BONTE ANT</a></li>
+                        </ul>
+                    </div><!--/servCol-->
+
+                    <div id="newsCol" class="sCol">
+                        <h4>news</h4>
+                        <ul>
+                            <li>
+                                <details open>
+                                    <summary title="click to show/hide"><h5>lorem ipsum dolor</h5></summary>
+                                    <p>
+                                        Ut enim ad minim.Lorem ipsum dolor sit amet, consecte aliqua.
+                                        Ut enim ad minim. Conoscitur iste oranios una restear it nuir.
+                                        Ut enim ad minim.Lorem ipsum dolor sit amet, consecte aliqua.
+                                        Ut enim ad minim. Conoscitur iste oranios una restear it nuir.
+                                        Ut enim ad minim.Lorem ipsum dolor sit amet, consecte aliqua.
+                                    </p>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details open>
+                                    <summary title="click to show/hide"><h5>lorem ipsum dolor</h5></summary>
+                                    <p>
+                                        Ut enim ad minim.Lorem ipsum dolor sit amet, consecte aliqua.
+                                        Ut enim ad minim. Conoscitur iste oranios una restear it nuir.
+                                        Ut enim ad minim.Lorem ipsum dolor sit amet, consecte aliqua.
+                                        Ut enim ad minim. Conoscitur iste oranios una restear it nuir.
+                                        Ut enim ad minim.Lorem ipsum dolor sit amet, consecte aliqua.
+                                    </p>  
+                                </details>
+                                
+                            </li>
+                        </ul>
+                    </div><!--/newsCol-->
+
+                </div><!--/rightCol-->
+                <div class="clearFix"></div>
+            </section><!--/services container-->
+        </main><!--/main-->
+
+        <footer>
+            <div class="container">
+                <div id="footerBox">&copy; Training Dragon 2016</div>
+                <p id="footerNav">
+                    <a href="index.html">home</a>|
+                    <a href="forms.html">forms 2.0</a> |
+                    <a href="geo.html">geo</a> |
+                    <a href="video1.html">video</a> |
+                    <a href="canvas1.html">canvas</a> |
+                    <a href="um.html">user media</a> |
+                    <a href="svg.html">svg</a> |
+                    <a href="css3.html">css3</a>
+                </p>
+                <div class="clearFix"></div>
+            </div>
+        </footer><!--/footer-->
+    </div><!--/wrapper-->
+
+
+
+
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
